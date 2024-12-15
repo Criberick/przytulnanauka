@@ -30,13 +30,20 @@ menuIcon.onclick = () => {
 // Pobierz przycisk
 const toggleButton = document.getElementById("theme-toggle");
 
+// Funkcja do aktualizacji ikony na podstawie trybu
+function updateButtonIcon() {
+    if (document.body.classList.contains('light-mode')) {
+        toggleButton.textContent = "\u{1F319}"; // Ikona księżyca
+    } else {
+        toggleButton.textContent = "\u{1F31E}"; // Ikona słońca
+    }
+}
+
+// Dodaj obsługę kliknięcia
 toggleButton.addEventListener("click", () => {
     document.body.classList.toggle("light-mode");
-
-    // Zmień tekst przycisku w zależności od trybu
-    if (document.body.classList.contains('light-mode')) {
-        toggleButton.textContent = "\u{1F319}";
-    } else {
-        toggleButton.textContent = "\u{1F31E}";
-    }
+    updateButtonIcon(); // Zaktualizuj ikonę po zmianie trybu
 });
+
+// Ustaw ikonę na starcie
+updateButtonIcon();

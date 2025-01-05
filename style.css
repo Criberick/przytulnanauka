@@ -256,10 +256,14 @@ span {
   color: #000000;
 }
 
-.text-animation{
+h3.text-animation{
   font-size: 34px;
   font-weight: 600;
   min-width: 280px;
+  position: relative;
+  display: inline-block;
+  overflow: hidden; /* Ukryj nadmiar tekstu */
+  white-space: nowrap; /* Zapobiegaj łamaniu linii */
 }
 
 .text-animation span{
@@ -644,7 +648,7 @@ span {
 }
 
 .contact-item a:hover {
-  color: #ffffff;
+  color: var(--text-color);
 }
 
 .footer{

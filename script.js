@@ -29,13 +29,14 @@ menuIcon.onclick = () => {
 
 // Pobierz przycisk
 const toggleButton = document.getElementById("theme-toggle");
+const iconElement = toggleButton.querySelector("i")
 
 // Funkcja do aktualizacji ikony na podstawie trybu
 function updateButtonIcon() {
     if (document.body.classList.contains('light-mode')) {
-        toggleButton.textContent = "\u{1F319}"; // Ikona księżyca
+        iconElement.className = 'bx bx-moon'; // Ikona księżyca
     } else {
-        toggleButton.textContent = "\u{1F31E}"; // Ikona słońca
+        iconElement.className = 'bx bx-sun'; // Ikona słońca
     }
 }
 

@@ -1,0 +1,12 @@
+{
+  "home": "Головна",
+  "education": "Освіта",
+  "services": "Послуги",
+  "experience": "Досвід",
+  "contact": "Контакт",
+  "intro": "Привіт, я <span>Тетяна</span>",
+  "introSubtitle": "Я займаюся <span></span>",
+  "introText": "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
+  "check": "Перевірити",
+  "call": "Зв'язок"
+}

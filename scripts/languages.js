@@ -31,3 +31,4 @@ languageToggle.addEventListener("click", () => {
 
 // Ustaw język domyślny na start
 loadTranslations("pl");
+

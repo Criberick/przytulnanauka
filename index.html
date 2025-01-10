@@ -3,26 +3,26 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio Tetiana Turlejska</title>
+    <title>Przytulna nauka</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&family=Ubuntu+Sans+Mono:ital,wght@0,400..700;1,400..700&display=swap" rel="stylesheet">
 </head>
 <body>
     
     <header class="header">
-        <a href= #home class="logo">Tetiana  <span>Turlejska</span></a> 
+        <a href= #home class="logo">Przytulna  <span>Nauka</span></a>
 
         <i class='bx bx-menu' id="menu-icon"></i>
 
         <nav class="navbar">
-            <a href="#home" class="active" data-translate="home">Główna</a>
-            <a href="#education" data-translate="education">Wykształcenie</a>
-            <a href="#services" data-translate="services">Usługi</a>
-            <a href="#experience" data-translate="experience">Doświadczenie</a>
-            <a href="#contact" data-translate="contact">Kontakt</a>
+            <a href="#home" class="active" data-translate="nav-home"></a>
+            <a href="#education" data-translate="nav-education"></a>
+            <a href="#services" data-translate="nav-services"></a>
+            <a href="#experience" data-translate="nav-experience"></a>
+            <a href="#contact" data-translate="nav-contact"></a>
         </nav>
 
         <div class="btn-group" id="nav-buttons">
@@ -36,21 +36,20 @@
 
     <section class="home" id="home">
         <div class="home-content">
-                <h1>Cześć, jestem <span>Tetiana</span></h1>
-                <h3 class="text-animation">Prowadzę <span></span></h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit aut esse neque fugiat commodi tempora recusandae earum sequi similique hic, quasi in quo debitis veritatis amet, quidem qui id distinctio.
-                </p>
+            <h1 data-translate="home-intro"><span>Tetiana</span></h1>
+                <h3 class="text-animation" data-translate="home-introSubtitle"><span></span></h3>
+            <p data-translate="home-introText"></p>
 
             <div class="social-icons">
-                <a href="#"><i class='bx bxl-linkedin-square'></i></a>
                 <a href="#"><i class='bx bxl-instagram'></i></a>
-                <a href="#"><i class='bx bxl-youtube'></i></a>
-                <a href="#"><i class='bx bxl-twitter'></i></a>
+                <a href="#"><i class='bx bxl-linkedin-square'></i></a>
+                <a href="#"><i class='bx bxl-tiktok'></i></a>
+                <a href="#"><i class='bx bxl-telegram'></i></a>
             </div>
             
             <div class="btn-group">
-                <a href="#" class="btn">Sprawdź</a>
-                <a href="#contact" class="btn">Kontakt</a>
+                <a href="#" class="btn" data-translate="btn-check"></a>
+                <a href="#contact" class="btn" data-translate="btn-call"></a>
             </div>
         </div>
             <div class="home-img">
@@ -59,15 +58,15 @@
     </section>
 
     <section class="education" id="education">
-        <h2 class="heading">Wykształcenie</h2>
+        <h2 class="heading" data-translate="edu-title">Wykształcenie</h2>
 
         <div class="timeline-items">
             <div class="timeline-item">
                 <div class="timeline-dot"></div>
                     <div class="timeline-date">2017</div>
                     <div class="timeline-content">
-                        <h3>Lorem ipsum 1</h3>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vel sapiente excepturi, pariatur voluptatibus sit labore modi mollitia repellendus temporibus cupiditate.</p>
+                        <h3 data-translate="edu-timeline-1"></h3>
+                        <p data-translate="edu-p-1">L</p>
                     </div>
             </div>
 
@@ -75,8 +74,8 @@
                 <div class="timeline-dot"></div>
                     <div class="timeline-date">2021</div>
                     <div class="timeline-content">
-                        <h3>Lorem ipsum 2</h3>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vel sapiente excepturi, pariatur voluptatibus sit labore modi mollitia repellendus temporibus cupiditate.</p>
+                        <h3 data-translate="edu-timeline-2"></h3>
+                        <p data-translate="edu-p-2"></p>
                     </div>
             </div>
 
@@ -84,8 +83,8 @@
                 <div class="timeline-dot"></div>
                     <div class="timeline-date">2021</div>
                     <div class="timeline-content">
-                        <h3>Lorem ipsum 3</h3>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vel sapiente excepturi, pariatur voluptatibus sit labore modi mollitia repellendus temporibus cupiditate.</p>
+                        <h3 data-translate="edu-timeline-3"></h3>
+                        <p data-translate="edu-p-3"></p>
                     </div>
             </div>
 
@@ -93,8 +92,8 @@
                 <div class="timeline-dot"></div>
                     <div class="timeline-date">2023</div>
                     <div class="timeline-content">
-                        <h3>Lorem ipsum 4</h3>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vel sapiente excepturi, pariatur voluptatibus sit labore modi mollitia repellendus temporibus cupiditate.</p>
+                        <h3 data-translate="edu-timeline-4"></h3>
+                        <p data-translate="edu-p-4"></p>
                     </div>
             </div>
 
@@ -102,34 +101,34 @@
     </section>
 
     <section class="services" id = "services">
-    <h2 class="heading">Usługi</h2>
+    <h2 class="heading" data-translate="services-title"></h2>
 
     <div class="services-container">
         <div class="service-box">
             <div class="service-info">
-                <h4>Lorem ipsum #1</h4>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla molestias pariatur eius dolorem amet maiores beatae quos ad rem blanditiis.</p>
+                <h4 data-translate="service-box-title-1"></h4>
+                <p data-translate="service-box-content-1"></p>
             </div>
         </div>
     
         <div class="service-box">
             <div class="service-info">
-                <h4>Lorem ipsum #2</h4>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla molestias pariatur eius dolorem amet maiores beatae quos ad rem blanditiis.</p>
+                <h4 data-translate="service-box-title-2"></h4>
+                <p data-translate="service-box-content-2"></p>
             </div>
         </div>
     
         <div class="service-box">
             <div class="service-info">
-                <h4>Lorem ipsum #3</h4>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla molestias pariatur eius dolorem amet maiores beatae quos ad rem blanditiis.</p>
+                <h4 data-translate="service-box-title-3"></h4>
+                <p data-translate="service-box-content-3"></p>
             </div>
         </div>
 
         <div class="service-box">
             <div class="service-info">
-                <h4>Lorem ipsum #4</h4>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla molestias pariatur eius dolorem amet maiores beatae quos ad rem blanditiis.</p>
+                <h4 data-translate="service-box-title-4"></h4>
+                <p data-translate="service-box-content-4"></p>
             </div>
         </div>
 
@@ -137,18 +136,18 @@
     </section>
 
     <section class="experience" id="experience">
-        <h2 class="heading">Doświadczenie</h2>
+        <h2 class="heading" data-translate="experience-title"></h2>
     
         <div class="experience-container">
             <div class="experience-card">
                 <div class="card-inner">
                     <div class="card-front">
-                        <h3>Praca w firmie X</h3>
-                        <p>Pracowałam jako analityk danych, zarządzałam danymi klientów i tworzyłam zaawansowane raporty.</p>
+                        <h3 data-translate="exp-card-front-1"></h3>
+                        <p data-translate="exp-card-front-p-1"></p>
                     </div>
                     <div class="card-back">
-                        <h3>Szczegóły</h3>
-                        <p>Skupiłam się na optymalizacji procesów biznesowych i automatyzacji analiz.</p>
+                        <h3 data-translate="exp-card-back-1"></h3>
+                        <p data-translate="exp-card-back-p-1"></p>
                     </div>
                 </div>
             </div>
@@ -156,12 +155,12 @@
             <div class="experience-card">
                 <div class="card-inner">
                     <div class="card-front">
-                        <h3>Projekt Y</h3>
-                        <p>Zarządzanie zespołem odpowiedzialnym za rozwój nowej platformy e-commerce.</p>
+                        <h3 data-translate="exp-card-front-2"></h3>
+                        <p data-translate="exp-card-front-p-2"></p>
                     </div>
                     <div class="card-back">
-                        <h3>Szczegóły</h3>
-                        <p>Wprowadziłam innowacyjne rozwiązania z zakresu UX/UI, co poprawiło konwersję o 25%.</p>
+                        <h3 data-translate="exp-card-back-2"></h3>
+                        <p data-translate="exp-card-back-p-2"></p>
                     </div>
                 </div>
             </div>
@@ -169,11 +168,12 @@
             <div class="experience-card">
                 <div class="card-inner">
                     <div class="card-front">
-                        <h3>Startup Z</h3>
-                        <p>Współzałożycielka startupu technologicznego, rozwój strategii biznesowej.</p>
+                        <h3 data-translate="exp-card-front-3"></h3>
+                        <p data-translate="exp-card-front-p-3"></p>
                     </div>
                     <div class="card-back">
-                        <p>Startup pozyskał inwestycję w wysokości 500 tys. zł.</p>
+                        <h3 data-translate="exp-card-back-3"></h3>
+                        <p data-translate="exp-card-back-3"></p>
                     </div>
                 </div>
             </div>
@@ -181,27 +181,27 @@
     </section>
     
     <section class="contact" id="contact">
-        <h2 class="heading">Kontakt</h2>
+        <h2 class="heading" data-translate="contact-title">Kontakt</h2>
     
         <div class="contact-content">
             <div class="contact-item">
-                <i class='bx bxs-phone'></i>
-                <h3>Telefon</h3>
-                <p><a href="tel:+48123456789">+48 123 456 789</a></p>
+                <i class='bx bxl-instagram'></i>
+                <h3 data-translate="instagram-btn-title"></h3>
+                <p><a href="#" >@nazwa_profilu</a></p>
             </div>
             <div class="contact-item">
-                <i class='bx bxl-facebook-circle'></i>
-                <h3>Facebook</h3>
-                <p><a href="#" target="_blank">facebook.com/nazwa_profilu</a></p>
+                <i class='bx bxl-linkedin'></i>
+                <h3 data-translate="linkedin-btn-title">Linkeidn</h3>
+                <p><a href="#" target="_blank" data-translate="linkedin-btn-p">linkedin.com/nazwa_profilu</a></p>
             </div>
             <div class="contact-item">
-                <i class='bx bxl-telegram'></i>
-                <h3>Telegram</h3>
+                <i class='bx bxl-tiktok'></i>
+                <h3 data-translate="tiktok-btn-title">Tiktok</h3>
                 <p><a href="#" target="_blank">@nazwa_profilu</a></p>
             </div>
             <div class="contact-item">
-                <i class='bx bxl-instagram'></i>
-                <h3>Instagram</h3>
+                <i class='bx bxl-telegram'></i>
+                <h3 data-translate="telegram-btn-title">Telegram</h3>
                 <p><a href="#" target="_blank">@nazwa_profilu</a></p>
             </div>
         </div>
@@ -209,35 +209,35 @@
     
     <footer class="footer">
         <div class="social">
-            <a href="#"><i class='bx bxl-linkedin-square'></i></a>
             <a href="#"><i class='bx bxl-instagram'></i></a>
-            <a href="#"><i class='bx bxl-youtube'></i></a>
-            <a href="#"><i class='bx bxl-twitter'></i></a>
+            <a href="#"><i class='bx bxl-linkedin-square'></i></a>
+            <a href="#"><i class='bx bxl-tiktok'></i></a>
+            <a href="#"><i class='bx bxl-telegram'></i></a>
         </div>
 
         <ul class="list">
         <li>
-            <a href="#">FAQ</a>
+            <a href="#" data-translate="list-main"></a>
         </li>
 
         <li>
-            <a href="#">Wykształcenie</a>
+            <a href="#" data-translate="list-education"></a>
         </li>
 
         <li>
-            <a href="#">Usługi</a>
+            <a href="#" data-translate="list-services"></a>
         </li>
 
         <li>
-            <a href="#">Doświadczeniet</a>
+            <a href="#" data-translate="list-experience"></a>
         </li>
 
         <li>
-            <a href="#">Kontakt</a>
+            <a href="#" data-translate="list-contact"></a>
         </li>
     </ul>
-    <p class="copyright">
-        © Tetiana Turlejska | Wszystkie prawa zasteżone
+    <p class="copyright" data-translate="copyright">
+
     </p>
     </footer>
 

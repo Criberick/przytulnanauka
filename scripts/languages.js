@@ -21,7 +21,7 @@ function updateText(translations) {
     });
 }
 
-// Obsługa przycisku zmiany języka
+// Language change button
 const languageToggle = document.getElementById("language-toggle");
 languageToggle.addEventListener("click", () => {
     const newLang = currentLanguage === "pl" ? "ua" : "pl";
@@ -29,6 +29,6 @@ languageToggle.addEventListener("click", () => {
     loadTranslations(newLang);
 });
 
-// Ustaw język domyślny na start
+// Default start language
 loadTranslations("pl");
 

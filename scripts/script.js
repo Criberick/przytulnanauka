@@ -27,11 +27,11 @@ menuIcon.onclick = () => {
 };
 
 
-// Pobierz przycisk
+// Get buttons
 const toggleButton = document.getElementById("theme-toggle");
 const iconElement = toggleButton.querySelector("i")
 
-// Funkcja do aktualizacji ikony na podstawie trybu
+// Icon change function
 function updateButtonIcon() {
     if (document.body.classList.contains('light-mode')) {
         iconElement.className = 'bx bx-moon'; // Ikona księżyca
@@ -40,11 +40,31 @@ function updateButtonIcon() {
     }
 }
 
-// Dodaj obsługę kliknięcia
 toggleButton.addEventListener("click", () => {
     document.body.classList.toggle("light-mode");
-    updateButtonIcon(); // Zaktualizuj ikonę po zmianie trybu
+    updateButtonIcon();
 });
 
-// Ustaw ikonę na starcie
+// Default start icon
 updateButtonIcon();
+
+// Logo image change
+    document.addEventListener("DOMContentLoaded", function () {
+    const logo = document.getElementById("logo");
+
+    logo.addEventListener("mouseenter", function () {
+    logo.style.opacity = "0";
+    setTimeout(() => {
+    logo.src = "assets/domain_logo.png"; // Podmień na właściwy plik
+    logo.style.opacity = "1";
+}, 400); // Czas musi być taki jak w CSS (0.4s)
+});
+
+    logo.addEventListener("mouseleave", function () {
+    logo.style.opacity = "0";
+    setTimeout(() => {
+    logo.src = "assets/tetiana_avatar.png";
+    logo.style.opacity = "1";
+}, 400);
+});
+});

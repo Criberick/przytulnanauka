@@ -18,10 +18,10 @@
 }
 
 .light-mode {
-  --bg-color: #fcf0e9; /* Tło główne w trybie jasnym */
-  --second-bg-color: #fdf3ee; /* Drugie tło w trybie jasnym */
-  --text-color: #000000; /* Tekst w trybie jasnym */
-  --main-color: #e14f91; /* Akcent kolorystyczny w trybie jasnym */
+  --bg-color: #fcf0e9; 
+  --second-bg-color: #fdf3ee;
+  --text-color: #000000; 
+  --main-color: #e14f91;
   --header-color: rgba(252, 240, 233, 0.3);
 }
 
@@ -470,15 +470,17 @@ h3.text-animation{
   gap: 2.5rem;
 }
 
-.service-box{
-  background: var(--main-color); /* Tło przy najechaniu */
-  color: var(--bg-color); /* Odwrócenie kolorów */
-  height: 300px;
+.service-box {
+  background: var(--main-color);
+  color: var(--bg-color);
+  min-height: 300px; /* zamiast height */
   border-radius: 3rem;
   border: 5px solid transparent;
   cursor: pointer;
   transition: 0.4s ease-in-out;
+  overflow: hidden; /* opcjonalnie, aby nadmiar tekstu się ukrył */
 }
+
 
 .service-box:hover{
    background: var(--second-bg-color);
@@ -514,39 +516,41 @@ h3.text-animation{
 .experience {
   background: var(--second-bg-color);
   color: var(--text-color);
-  padding: 10rem 12%; /* Większy padding, aby sekcja miała przestrzeń u góry i na dole */
-  width: 100%; /* Sekcja wypełnia całą szerokość strony */
+  padding: 10rem 12%; 
+  width: 100%; 
 }
 
 .experience h2 {
-  text-align: center; /* Wyśrodkowanie nagłówka */
-  margin-bottom: 15rem; /* Dodanie większego odstępu poniżej nagłówka */
+  text-align: center; 
+  margin-bottom: 15rem; 
 }
 
 .experience-container {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr)); /* Zwiększenie minimalnej szerokości kontenerów */
-  gap: 4rem; /* Większe odstępy między boxami */
-  padding: 0; /* Usunięcie wewnętrznego odstępu */
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr)); 
+  gap: 4rem; 
+  padding: 0;
   width: 100%;
 }
 
 .experience-card {
   perspective: 1000px;
-  height: 400px; /* Zwiększenie wysokości boxów */
+  height: 400px; 
 }
 
 .card-inner {
   position: relative;
   width: 100%;
-  height: 100%; /* Dopasowanie wysokości wewnętrznych elementów do boxa */
+  height: 100%; 
   transition: transform 0.8s ease;
   transform-style: preserve-3d;
 }
 
-.experience-card:hover .card-inner {
+.experience-card:hover .card-inner,
+.experience-card.is-flipped .card-inner {
   transform: rotateY(180deg);
 }
+
 
 .card-front, .card-back {
   position: absolute;
@@ -586,12 +590,12 @@ h3.text-animation{
 }
 
 .experience-card p {
-  font-size: 1.8rem; /* Zwiększenie rozmiaru tekstu */
+  font-size: 1.8rem; 
   font-weight: 400;
   text-align: center;
   line-height: 1.8;
   color: inherit;
-  margin-top: 3rem; /* Możesz dodatkowo zwiększyć odstęp nad paragrafem */
+  margin-top: 3rem;
 }
 
 .contact {
@@ -804,10 +808,10 @@ h3.text-animation{
     gap: 0.5rem;
   }
   .toggle {
-    font-size: 1.4rem; /* Mniejszy rozmiar tekstu */
-    padding: 0.8rem 2rem; /* Zmniejszenie paddingu */
-    border-radius: 0.8rem; /* Mniejszy border-radius */
-    box-shadow: 0 0 15px var(--main-color); /* Mniejszy cień */
+    font-size: 1.4rem; 
+    padding: 0.8rem 2rem;
+    border-radius: 0.8rem;
+    box-shadow: 0 0 15px var(--main-color);
   }
    .home{
     flex-direction: column-reverse;
@@ -837,11 +841,11 @@ h3.text-animation{
 
 @media(max-width: 600px) {
   .toggle {
-    font-size: 1.2rem; /* Jeszcze mniejszy rozmiar tekstu */
-    padding: 0.6rem 1.5rem; /* Jeszcze mniejszy padding */
-    box-shadow: 0 0 10px var(--main-color); /* Subtelniejszy cień */
+    font-size: 1.2rem;
+    padding: 0.6rem 1.5rem;
+    box-shadow: 0 0 10px var(--main-color);
   }
   h2.heading{
-    font-size: 6rem;
+    font-size: 4.5rem;
   }
 }

@@ -34,9 +34,9 @@ const iconElement = toggleButton.querySelector("i")
 // Icon change function
 function updateButtonIcon() {
     if (document.body.classList.contains('light-mode')) {
-        iconElement.className = 'bx bx-moon'; // Ikona księżyca
+        iconElement.className = 'bx bx-moon';
     } else {
-        iconElement.className = 'bx bx-sun'; // Ikona słońca
+        iconElement.className = 'bx bx-sun';
     }
 }
 
@@ -48,23 +48,53 @@ toggleButton.addEventListener("click", () => {
 // Default start icon
 updateButtonIcon();
 
-// Logo image change
-    document.addEventListener("DOMContentLoaded", function () {
+document.addEventListener("DOMContentLoaded", function () {
     const logo = document.getElementById("logo");
+    let isOriginal = true;
 
+    function toggleLogo() {
+        logo.style.opacity = "0";
+        setTimeout(() => {
+            if (isOriginal) {
+                logo.src = "assets/domain_logo.png";
+            } else {
+                logo.src = "assets/tetiana_avatar.png";
+            }
+            logo.style.opacity = "1";
+            isOriginal = !isOriginal;
+        }, 400);
+    }
+
+    // hover (desktop)
     logo.addEventListener("mouseenter", function () {
-    logo.style.opacity = "0";
-    setTimeout(() => {
-    logo.src = "assets/domain_logo.png"; // Podmień na właściwy plik
-    logo.style.opacity = "1";
-}, 400); // Czas musi być taki jak w CSS (0.4s)
+        logo.style.opacity = "0";
+        setTimeout(() => {
+            logo.src = "assets/domain_logo.png";
+            logo.style.opacity = "1";
+        }, 400);
+    });
+    logo.addEventListener("mouseleave", function () {
+        logo.style.opacity = "0";
+        setTimeout(() => {
+            logo.src = "assets/tetiana_avatar.png";
+            logo.style.opacity = "1";
+        }, 400);
+    });
+
+    // click and hover (mobile and desktop)
+    logo.addEventListener("click", toggleLogo);
+    logo.addEventListener("touchstart", toggleLogo);
 });
 
-    logo.addEventListener("mouseleave", function () {
-    logo.style.opacity = "0";
-    setTimeout(() => {
-    logo.src = "assets/tetiana_avatar.png";
-    logo.style.opacity = "1";
-}, 400);
-});
-});
+// expeirience card flip
+
+document.addEventListener("DOMContentLoaded", function () {
+    const cards = document.querySelectorAll('.experience-card');
+  
+    cards.forEach(card => {
+      card.addEventListener('click', function () {
+        card.classList.toggle('is-flipped');
+      });
+    });
+  });
+  

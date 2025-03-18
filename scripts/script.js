@@ -52,49 +52,61 @@ document.addEventListener("DOMContentLoaded", function () {
     const logo = document.getElementById("logo");
     let isOriginal = true;
 
-    function toggleLogo() {
-        logo.style.opacity = "0";
-        setTimeout(() => {
-            if (isOriginal) {
+    // Check if mobile device
+    const isMobile = ('ontouchstart' in window) || (navigator.maxTouchPoints > 0);
+
+    // Desktop behavior
+    if (!isMobile) {
+        logo.addEventListener("mouseenter", function () {
+            logo.style.opacity = "0";
+            setTimeout(() => {
                 logo.src = "assets/domain_logo.png";
-            } else {
+                logo.style.opacity = "1";
+            }, 400);
+        });
+        
+        logo.addEventListener("mouseleave", function () {
+            logo.style.opacity = "0";
+            setTimeout(() => {
                 logo.src = "assets/tetiana_avatar.png";
-            }
-            logo.style.opacity = "1";
-            isOriginal = !isOriginal;
-        }, 400);
+                logo.style.opacity = "1";
+            }, 400);
+        });
     }
-
-    // hover (desktop)
-    logo.addEventListener("mouseenter", function () {
-        logo.style.opacity = "0";
-        setTimeout(() => {
-            logo.src = "assets/domain_logo.png";
-            logo.style.opacity = "1";
-        }, 400);
-    });
-    logo.addEventListener("mouseleave", function () {
-        logo.style.opacity = "0";
-        setTimeout(() => {
-            logo.src = "assets/tetiana_avatar.png";
-            logo.style.opacity = "1";
-        }, 400);
-    });
-
-    // click and hover (mobile and desktop)
-    logo.addEventListener("click", toggleLogo);
-    logo.addEventListener("touchstart", toggleLogo);
+    // Mobile behavior
+    else {
+        logo.addEventListener("click", function() {
+            logo.style.opacity = "0";
+            setTimeout(() => {
+                logo.src = isOriginal ? "assets/domain_logo.png" : "assets/tetiana_avatar.png";
+                logo.style.opacity = "1";
+                isOriginal = !isOriginal;
+            }, 400);
+        });
+    }
 });
 
 // expeirience card flip
 
 document.addEventListener("DOMContentLoaded", function () {
     const cards = document.querySelectorAll('.experience-card');
-  
+    const isMobile = ('ontouchstart' in window) || (navigator.maxTouchPoints > 0);
+
     cards.forEach(card => {
-      card.addEventListener('click', function () {
-        card.classList.toggle('is-flipped');
-      });
+        if (!isMobile) {
+            // Desktop hover behavior
+            card.addEventListener('mouseenter', function() {
+                this.classList.add('is-flipped');
+            });
+            card.addEventListener('mouseleave', function() {
+                this.classList.remove('is-flipped');
+            });
+        } else {
+            // Mobile click behavior
+            card.addEventListener('click', function() {
+                this.classList.toggle('is-flipped');
+            });
+        }
     });
-  });
+});
   

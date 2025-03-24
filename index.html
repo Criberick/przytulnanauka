@@ -31,14 +31,23 @@
      <link rel="preconnect" href="https://fonts.googleapis.com">
      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
      <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&family=Ubuntu+Sans+Mono:ital,wght@0,400..700;1,400..700&display=swap" rel="stylesheet">
-</head>
+     <link rel="apple-touch-icon" href="/assets/ios-icon.png">
+
+     <!-- Mobile-->
+     <meta name="apple-mobile-web-app-capable" content="yes">
+     <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+     <script src="https://unpkg.com/smoothscroll-polyfill@0.4.4/dist/smoothscroll.min.js"></script>
+
+    </head>
 <body>
     
     <header class="header">
-        <a href= #home class="logo">Przytulna  <span>Nauka</span></a>
-
+        <div class="header-left">
+            <a href="#home" class="logo"><span>Przytulna</span> Nauka</a>
+        </div>
+    
         <i class='bx bx-menu' id="menu-icon"></i>
-
+    
         <nav class="navbar">
             <a href="#home" class="active" data-translate="nav-home"></a>
             <a href="#education" data-translate="nav-education"></a>
@@ -46,7 +55,7 @@
             <a href="#experience" data-translate="nav-experience"></a>
             <a href="#contact" data-translate="nav-contact"></a>
         </nav>
-
+    
         <div class="btn-group" id="nav-buttons">
             <button id="theme-toggle" class="toggle">
                 <i class='bx bx-sun'></i>

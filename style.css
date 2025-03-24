@@ -811,9 +811,24 @@ h3.text-animation{
 }
 
 @media(max-width:895px){
-   #menu-icon{
+
+  #menu-icon {
     display: block;
-   }
+    position: absolute;
+    right: 5%;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 1001;
+    font-size: 3.2rem;
+  }
+  .header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1.5rem 5%;
+    height: auto;
+  }
+
    .navbar{
     position: absolute;
     top: 100%;
@@ -827,27 +842,25 @@ h3.text-animation{
     border-bottom: 2px solid var(--main-color);
     display: none;
    }
+   
    .navbar.active{
     display: block;
    }
+   
    .navbar a{
     display: block;
     font-size: 2rem;
     margin: 3rem 0;
     color: #fff;
    }
-  #nav-buttons{
-    padding-left: 2rem;
+
+   .logo {
+    font-size: 2.5rem;
+    white-space: nowrap;
     display: flex;
     align-items: center;
-    gap: 0.5rem;
   }
-  .toggle {
-    font-size: 1.4rem; 
-    padding: 0.8rem 2rem;
-    border-radius: 0.8rem;
-    box-shadow: 0 0 15px var(--main-color);
-  }
+
    .home{
     flex-direction: column-reverse;
     margin: 5rem 4rem;
@@ -872,8 +885,48 @@ h3.text-animation{
    .services-container{
     grid-template-columns: repeat(1,1fr);
    }
-}
 
+  .btn-group#nav-buttons {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    flex-wrap: nowrap;
+    width: auto;
+    min-width: 120px;
+    right: 10%;
+    padding: 0 !important;
+    gap: 0.5rem;
+  }
+
+  #nav-buttons.btn-group {
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+    align-items: center;
+    width: auto; 
+    margin-left: auto; 
+  }
+
+  .toggle {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0.6rem 1.2rem;
+    font-size: 1.4rem;
+    border-radius: 0.8rem;
+    white-space: nowrap; 
+    flex-shrink: 0;
+    max-width: 100%; 
+  }
+
+  .navbar.active {
+    width: 100%;
+    right: 0;
+    padding: 6rem 5% 2rem;
+    align-items: flex-end;
+  }
+}
 @media(max-width: 768px) {
   html {
       font-size: 50%;
@@ -894,8 +947,9 @@ h3.text-animation{
   }
 
   h2.heading{
-    font-size: 7rem;
+    font-size: 5.5rem;
   }
+
   .navbar a {
     margin-left: 2rem;
     font-size: 2.2rem;
@@ -903,8 +957,8 @@ h3.text-animation{
   }
 
   .toggle {
-    padding: 1rem 1.5rem;
-    font-size: 1.4rem;
+    padding: 0.5rem 0.5rem;
+    font-size: 1.2rem;
   }
 
   .services-container {
@@ -951,50 +1005,125 @@ h3.text-animation{
       display: block;
       margin: 1rem 0;
   }
-}
 
-@media(max-width: 480px) {
-  .header {
-      padding: 2rem 5%;
+  .contact {
+    padding: 5rem 5% !important;
   }
 
-  .home {
-      gap: 5rem;
-      margin: 3rem 2rem;
+  .contact .heading {
+    font-size: 4.5rem !important;
+    margin-bottom: 5rem !important;
   }
 
-  .home-content h1 {
-      font-size: 4rem;
-  }
-
-  .btn-group {
-      flex-direction: column;
-      width: 100%;
-  }
-
-  .btn {
-      width: 100%;
-      text-align: center;
-      margin: 0.5rem 0;
-  }
-
-  .navbar {
-      width: 100%;
-      padding: 1rem 5%;
+  .contact-item {
+    width: 100% !important;
+    padding: 2rem !important;
+    margin: 1rem 0 !important;
   }
 
   .experience-card {
-    height: 250px;
-}
-
-.experience-card h3 {
-  font-size: 2rem;
-}
-
-.experience-card p {
-  font-size: 1.4rem;
-}
-  .contact-item h3 {
-      font-size: 2rem;
+    height: 300px !important;
+    margin: 1.5rem 0 !important;
   }
-}
+
+  .card-front, .card-back {
+    padding: 2rem !important;
+  }
+
+  .experience-card h3 {
+    font-size: 2.2rem !important;
+  }
+
+  .experience-card p {
+    font-size: 1.6rem !important;
+  }
+
+  .service-box {
+    min-height: 350px; 
+  }
+
+
+  .service-box {
+    min-height: 300px;
+  }
+  
+  .service-info p {
+    max-height: 150px;
+  }
+
+    section {
+      padding: 8rem 5% !important;
+      min-height: auto;
+    }
+  
+    .home-content h1 {
+      font-size: 4.5rem !important;
+      line-height: 1.1;
+    }
+  
+    .home-img img {
+      width: 65vw;
+      top: 0;
+    }
+  
+    .btn-group {
+      gap: 1rem;
+      flex-wrap: wrap;
+    }
+  }
+
+  @media(max-width: 385px) {
+    .header {
+        padding: 2rem 5%;
+    }
+  
+    .home {
+        gap: 5rem;
+        margin: 3rem 2rem;
+    }
+  
+    .home-content h1 {
+        font-size: 4rem;
+    }
+  
+    .btn-group {
+        flex-direction: row;
+        width: 100%;
+    }
+  
+    .btn {
+        width: 100%;
+        text-align: center;
+        margin: 0.5rem 0;
+    }
+
+    .toggle {
+      padding: 0.1rem 0.1rem;
+      font-size: 1.1rem;
+    }
+  
+    .navbar {
+        width: 100%;
+        padding: 1rem 5%;
+    }
+  
+    .experience-card {
+      height: 250px;
+  }
+  
+  .experience-card h3 {
+    font-size: 2rem;
+  }
+  
+  .experience-card p {
+    font-size: 1.4rem;
+  }
+    .contact-item h3 {
+        font-size: 2rem;
+    }
+  }
+  
+  /* .header, .btn-group#nav-buttons, .logo, #menu-icon {
+    border: 1px solid red !important; 
+    background: rgba(255, 0, 0, 0.1);
+  } */

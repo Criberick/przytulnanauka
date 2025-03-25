@@ -26,12 +26,9 @@ menuIcon.onclick = () => {
     navbar.classList.toggle('active');
 };
 
-
-// Get buttons
 const toggleButton = document.getElementById("theme-toggle");
 const iconElement = toggleButton.querySelector("i")
 
-// Icon change function
 function updateButtonIcon() {
     if (document.body.classList.contains('light-mode')) {
         iconElement.className = 'bx bx-moon';
@@ -45,23 +42,20 @@ toggleButton.addEventListener("click", () => {
     updateButtonIcon();
 });
 
-// Default start icon
 updateButtonIcon();
 
 document.addEventListener("DOMContentLoaded", function () {
     const logo = document.getElementById("logo");
     let isOriginal = true;
-
-    // Check if mobile device
     const isMobile = ('ontouchstart' in window) || (navigator.maxTouchPoints > 0);
 
-    // Desktop behavior
     if (!isMobile) {
         logo.addEventListener("mouseenter", function () {
             logo.style.opacity = "0";
             setTimeout(() => {
                 logo.src = "assets/domain_logo.png";
                 logo.style.opacity = "1";
+                isOriginal = false;
             }, 400);
         });
         
@@ -70,11 +64,10 @@ document.addEventListener("DOMContentLoaded", function () {
             setTimeout(() => {
                 logo.src = "assets/tetiana_avatar.png";
                 logo.style.opacity = "1";
+                isOriginal = true;
             }, 400);
         });
-    }
-    // Mobile behavior
-    else {
+    } else {
         logo.addEventListener("click", function() {
             logo.style.opacity = "0";
             setTimeout(() => {
@@ -84,9 +77,18 @@ document.addEventListener("DOMContentLoaded", function () {
             }, 400);
         });
     }
-});
 
-// expeirience card flip
+    setTimeout(() => {
+        setInterval(() => {
+            logo.style.opacity = "0";
+            setTimeout(() => {
+                logo.src = isOriginal ? "assets/domain_logo.png" : "assets/tetiana_avatar.png";
+                logo.style.opacity = "1";
+                isOriginal = !isOriginal;
+            }, 400);
+        }, 5000);
+    }, 5000);
+});
 
 document.addEventListener("DOMContentLoaded", function () {
     const cards = document.querySelectorAll('.experience-card');
@@ -94,7 +96,6 @@ document.addEventListener("DOMContentLoaded", function () {
 
     cards.forEach(card => {
         if (!isMobile) {
-            // Desktop hover behavior
             card.addEventListener('mouseenter', function() {
                 this.classList.add('is-flipped');
             });
@@ -102,11 +103,17 @@ document.addEventListener("DOMContentLoaded", function () {
                 this.classList.remove('is-flipped');
             });
         } else {
-            // Mobile click behavior
             card.addEventListener('click', function() {
                 this.classList.toggle('is-flipped');
             });
         }
     });
+
+    setTimeout(() => {
+        setInterval(() => {
+            cards.forEach(card => {
+                card.classList.toggle('is-flipped');
+            });
+        }, 5000);
+    }, 5000);
 });
-  

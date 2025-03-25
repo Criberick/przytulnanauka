@@ -11,7 +11,7 @@
 
 :root {
   --bg-color: #080808;
-  --second-bg-color: #131313;
+  --second-bg-color: #0c0c0c;
   --text-color: #ffffff;
   --main-color: #e14f91;
   --header-color: rgba(0, 0, 0, 0.3);
@@ -909,14 +909,16 @@ h3.text-animation{
   }
 
   .toggle {
-    display: flex;
+    display: inline-block;
     align-items: center;
     justify-content: center;
+    text-align: center;
     padding: 0.6rem 1.2rem;
-    font-size: 1.4rem;
+    font-size: 1.8rem;
     border-radius: 0.8rem;
     white-space: nowrap; 
     flex-shrink: 0;
+    min-width: 20%;
     max-width: 100%; 
   }
 
@@ -958,7 +960,7 @@ h3.text-animation{
 
   .toggle {
     padding: 0.5rem 0.5rem;
-    font-size: 1.2rem;
+    font-size: 1.6rem;
   }
 
   .services-container {
@@ -1099,7 +1101,7 @@ h3.text-animation{
 
     .toggle {
       padding: 0.1rem 0.1rem;
-      font-size: 1.1rem;
+      font-size: 1.4rem;
     }
   
     .navbar {

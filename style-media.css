@@ -1,0 +1,391 @@
+@media (min-width: 1920px) {
+  .service-box {
+    min-height: 200px;
+  }
+  .service-info p {
+    max-height: 300px;
+  }
+}
+@media (min-width: 896px) and (max-width: 1733px) {
+  .navbar a {
+    display: inline-block;
+    margin-top: 1rem;
+  }
+  .header {
+    padding: 1rem 12% 1rem;
+  }
+}
+@media (min-width: 1440px) {
+  .service-info p {
+    max-height: 240px;
+  }
+}
+@media (max-width: 1285px) {
+  html {
+    font-size: 55%;
+  }
+  .services-container {
+    padding-bottom: 7rem;
+    grid-template-columns: repeat(2, 1fr);
+    margin: 0 5rem;
+  }
+}
+@media (max-width: 991px) {
+  header {
+    padding: 2rem 3%;
+  }
+  section {
+    padding: 10rem 3% 2rem;
+  }
+  .home {
+    gap: 3rem;
+  }
+  .timeline-items::before {
+    left: 7px;
+  }
+  .timeline-item:nth-child(odd) {
+    padding-right: 0;
+    text-align: left;
+  }
+  .timeline-item:nth-child(odd),
+  .timeline-item:nth-child(even) {
+    padding-left: 37px;
+  }
+  .timeline-dot {
+    left: 0;
+  }
+  .services {
+    padding-bottom: 7rem;
+  }
+  .experience .wrapper {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .contact form {
+    flex-direction: column;
+  }
+  .footer {
+    padding: 2rem 3%;
+  }
+}
+@media (max-width: 895px) {
+  #menu-icon {
+    display: block;
+    position: absolute;
+    right: 5px;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 11;
+    font-size: 3.2rem;
+  }
+  .header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1.5rem;
+    height: auto;
+  }
+  .navbar {
+    position: absolute;
+    top: 100%;
+    right: 0;
+    width: 50%;
+    padding: 1rem 3%;
+    background: rgba(0, 0, 0, 0.8);
+    backdrop-filter: blur(20px);
+    border-bottom-left-radius: 2rem;
+    border-left: 2px solid var(--main-color);
+    border-bottom: 2px solid var(--main-color);
+    display: none;
+  }
+  .navbar.active {
+    display: block;
+  }
+  .navbar a {
+    display: block;
+    font-size: 2rem;
+    margin: 3rem 0;
+    color: #fff;
+  }
+  .logo {
+    font-size: 2.8rem;
+    white-space: nowrap;
+    display: flex;
+    align-items: center;
+  }
+  .home {
+    flex-direction: column-reverse;
+    margin: 2rem 4rem;
+  }
+  .home-content h3 {
+    font-size: 2.6rem;
+  }
+  .home-content h1 {
+    font-size: 8rem;
+    margin-top: 3rem;
+  }
+  .home-content p {
+    max-width: 600px;
+    margin: 0 auto;
+  }
+  .home-img img {
+    width: 40vw;
+  }
+
+  #logo-img{
+    margin: 0;
+  }
+
+  .services h2 {
+    margin-bottom: 3rem;
+  }
+  .services-container {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .btn-group#nav-buttons {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    flex-wrap: nowrap;
+    width: auto;
+    min-width: 120px;
+    right: 10%;
+    padding: 0;
+    flex-direction: row;
+    gap: 1rem;
+    margin-left: auto;
+  }
+  .toggle {
+    display: inline-block;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 0.7rem 1.5rem 0.5rem 1.5rem;
+    font-size: 1.8rem;
+    border-radius: 0.8rem;
+    white-space: nowrap;
+    flex-shrink: 0;
+    min-width: 20%;
+    max-width: 100%;
+  }
+  .navbar.active {
+    width: 50%;
+    right: 0;
+    padding: 6rem 5% 2rem;
+    align-items: flex-end;
+  }
+  #education{
+    padding: 1rem 12%;
+  }
+  
+  #services{
+    padding: 1rem 12%;
+  }
+  
+  #experience{
+    padding: 1rem 12%;
+  }
+  
+  #contact{
+    padding: 1rem 12%;
+  }
+
+
+}
+@media (max-width: 768px) {
+  html {
+    font-size: 50%;
+  }
+  .home-content h1 {
+    font-size: 4.5rem;
+    line-height: 1.1;
+  }
+  .home-content h3 {
+    font-size: 2.2rem;
+  }
+  h2.heading {
+    font-size: 5.5rem;
+  }
+  .navbar a {
+    margin-left: 2rem;
+    font-size: 2.2rem;
+    padding: 1rem;
+  }
+  .toggle {
+    padding: 0.7rem 1rem 0.5rem 1rem;
+    font-size: 1.6rem;
+  }
+  .services-container {
+    grid-template-columns: 1fr;
+    margin: 0 2rem;
+  }
+  .experience-container {
+    grid-template-columns: 1fr;
+  }
+  .experience-card {
+    height: 300px;
+    margin: 2rem 0;
+  }
+  .experience-card h3 {
+    font-size: 2.2rem;
+  }
+  .experience-card p {
+    font-size: 1.6rem;
+  }
+  .card-front,
+  .card-back {
+    padding: 1.5rem;
+  }
+  .contact .heading {
+    font-size: 6rem;
+    margin-bottom: 10rem;
+  }
+  .contact-item {
+    width: 100%;
+    padding: 2rem;
+    margin: 1rem 0; 
+  }
+  .timeline-content {
+    padding: 20px 30px;
+  }
+  .contact {
+    padding: 5rem 5%;
+  }
+  .contact .heading {
+    font-size: 4.5rem;
+    margin-bottom: 5rem;
+  }
+
+  .experience-card {
+    height: 300px;
+    margin: 1.5rem 0;
+  }
+  .card-front,
+  .card-back {
+    padding: 2rem;
+  }
+  .experience-card h3 {
+    font-size: 2.2rem;
+  }
+  .experience-card p {
+    font-size: 1.6rem;
+  }
+  .service-box {
+    min-height: 350px;
+  }
+  .service-box {
+    min-height: 300px;
+  }
+  .service-info p {
+    max-height: 150px;
+  }
+  section {
+    padding: 6rem 5% 0 5%;
+    min-height: auto;
+  }
+  .btn-group {
+    gap: 1rem;
+    flex-wrap: wrap;
+  }
+  .footer ul li {
+    display: block;
+    margin: 1rem 0;
+  }
+}
+@media (max-width: 440px) {
+  .header {
+    margin: 0;
+  }
+  .home {
+    gap: 0rem;
+    margin: 3rem 2rem;
+  }
+  .home-img img {
+    width: 75vw;
+    padding: 0;
+    margin: 8rem 5rem;
+  }
+}
+@media (max-width: 410px) {
+  .home {
+    gap: 0rem;
+    margin: 3rem 2rem;
+  }
+  .home-img img {
+    width: 70vw;
+    padding: 0;
+    margin-bottom: 10rem;
+  }
+  .home-content {
+    margin: 0;
+  }
+  .home h1 {
+    margin: 0;
+  }
+
+#education{
+  padding: 3rem 12%;
+}
+
+#services{
+  padding: 3rem 12%;
+}
+
+#experience{
+  padding: 3rem 12%;
+}
+
+#contact{
+  padding: 3rem 12%;
+}
+
+}
+@media (max-width: 385px) {
+  .header {
+    padding: 2rem 5%;
+  }
+  .home {
+    gap: 5rem;
+    margin: 3rem 2rem;
+  }
+  .home-content h1 {
+    font-size: 4rem;
+  }
+  .btn-group {
+    flex-direction: row;
+    width: 100%;
+  }
+  .btn {
+    width: 100%;
+    text-align: center;
+    margin: 0.5rem 0;
+  }
+  .toggle {
+    padding: 0.2rem 0.3rem;
+    font-size: 1.4rem;
+  }
+  .navbar {
+    width: 100%;
+    padding: 1rem 5%;
+  }
+  .home-img img {
+    width: 56vw;
+  }
+  .experience-card {
+    height: 250px;
+  }
+  .experience-card h3 {
+    font-size: 2rem;
+  }
+  .experience-card p {
+    font-size: 1.4rem;
+  }
+  .contact-item h3 {
+    font-size: 2rem;
+  }
+}
+/* 
+.header, .btn-group#nav-buttons, .logo, #menu-icon {
+      border: 1px solid red !important; 
+      background: rgba(255, 0, 0, 0.1);
+    } */

@@ -1,268 +1,313 @@
 <!DOCTYPE html>
 <html lang="pl">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Przytulna nauka</title>
-    
-     <!-- SEO -->
-     <meta name="description" content="Przytulna Nauka – profesjonalne korepetycje języka polskiego online dla Ukraińców. Nauka dostosowana do Twoich potrzeb!">
-     <meta name="keywords" content="nauka języka polskiego, korepetycje online, język polski dla Ukraińców, polski dla obcokrajowców, kurs polskiego, polski, przytulna nauka, nauka">
-     <meta name="author" content="Przytulna Nauka">
-     <meta name="robots" content="index, follow">
- 
-     <!-- Facebook, Messenger, LinkedIn) -->
-     <meta property="og:title" content="Przytulna Nauka – Korepetycje języka polskiego dla Ukraińców">
-     <meta property="og:description" content="Ucz się języka polskiego w przyjaznej atmosferze! Profesjonalne korepetycje online dla Ukraińców.">
-     <meta property="og:url" content="https://przytulnanauka.com">
-     <meta property="og:type" content="website">
- 
-     <!-- Twitter Card -->
-     <!--<meta name="twitter:card" content="summary_large_image">-->
-     <meta name="twitter:title" content="Przytulna Nauka – Korepetycje języka polskiego dla Ukraińców">
-     <meta name="twitter:description" content="Ucz się języka polskiego online! Indywidualne korepetycje dostosowane do Twojego poziomu.">
- 
-     <!-- Website Icon -->
-     <link rel="icon" href="/assets/favicon.ico" type="image/x-icon">
-     
-     <!-- Style -->
-     <link rel="stylesheet" href="style.css">
-     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
-     <link rel="preconnect" href="https://fonts.googleapis.com">
-     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-     <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&family=Ubuntu+Sans+Mono:ital,wght@0,400..700;1,400..700&display=swap" rel="stylesheet">
-     <link rel="apple-touch-icon" href="/assets/ios-icon.png">
 
-     <!-- Mobile-->
-     <meta name="apple-mobile-web-app-capable" content="yes">
-     <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
-     <script src="https://unpkg.com/smoothscroll-polyfill@0.4.4/dist/smoothscroll.min.js"></script>
+    <!-- SEO -->
+    <meta
+      name="description"
+      content="Przytulna Nauka – profesjonalne korepetycje języka polskiego online dla Ukraińców. Nauka dostosowana do Twoich potrzeb!"
+    />
+    <meta
+      name="keywords"
+      content="nauka języka polskiego, korepetycje online, język polski dla Ukraińców, polski dla obcokrajowców, kurs polskiego, polski, przytulna nauka, nauka"
+    />
+    <meta name="author" content="Przytulna Nauka" />
+    <meta name="robots" content="index, follow" />
 
-    </head>
-<body>
-    
+    <!-- Facebook, Messenger, LinkedIn) -->
+    <meta
+      property="og:title"
+      content="Przytulna Nauka – Korepetycje języka polskiego dla Ukraińców"
+    />
+    <meta
+      property="og:description"
+      content="Ucz się języka polskiego w przyjaznej atmosferze! Profesjonalne korepetycje online dla Ukraińców."
+    />
+    <meta property="og:url" content="https://przytulnanauka.com" />
+    <meta property="og:type" content="website" />
+
+    <!-- Twitter Card -->
+    <!--<meta name="twitter:card" content="summary_large_image">-->
+    <meta
+      name="twitter:title"
+      content="Przytulna Nauka – Korepetycje języka polskiego dla Ukraińców"
+    />
+    <meta
+      name="twitter:description"
+      content="Ucz się języka polskiego online! Indywidualne korepetycje dostosowane do Twojego poziomu."
+    />
+
+    <!-- Website Icon -->
+    <link rel="icon" href="/assets/favicon.ico" type="image/x-icon" />
+
+    <!-- Style -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&family=Ubuntu+Sans+Mono:ital,wght@0,400..700;1,400..700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="apple-touch-icon" href="/assets/ios-icon.png" />
+    <link rel="stylesheet" href="style-base.css" />
+    <link rel="stylesheet" href="style-media.css" />
+
+    <!-- Mobile-->
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta
+      name="apple-mobile-web-app-status-bar-style"
+      content="black-translucent"
+    />
+    <script src="https://unpkg.com/smoothscroll-polyfill@0.4.4/dist/smoothscroll.min.js"></script>
+  </head>
+  <body>
     <header class="header">
-        <div class="header-left">
-            <a href="#home" class="logo"><span>Przytulna</span> Nauka</a>
-        </div>
-    
-        <i class='bx bx-menu' id="menu-icon"></i>
-    
-        <nav class="navbar">
-            <a href="#home" class="active" data-translate="nav-home"></a>
-            <a href="#education" data-translate="nav-education"></a>
-            <a href="#services" data-translate="nav-services"></a>
-            <a href="#experience" data-translate="nav-experience"></a>
-            <a href="#contact" data-translate="nav-contact"></a>
-        </nav>
-    
-        <div class="btn-group" id="nav-buttons">
-            <button id="theme-toggle" class="toggle">
-                <i class='bx bx-sun'></i>
-            </button>
-            <button id="language-toggle" class="toggle">Polski</button>
-        </div>
+      <div class="header-left">
+        <a href="#home" class="logo"><span>Przytulna</span> Nauka</a>
+      </div>
+
+        <i class="bx bx-menu" id="menu-icon"></i>
+
+      <nav class="navbar">
+        <a href="#home" class="active" data-translate="nav-home"></a>
+        <a href="#education" data-translate="nav-education"></a>
+        <a href="#services" data-translate="nav-services"></a>
+        <a href="#experience" data-translate="nav-experience"></a>
+        <a href="#contact" data-translate="nav-contact"></a>
+      </nav>
+
+      <div class="btn-group" id="nav-buttons">
+        <button id="theme-toggle" class="toggle">
+          <i class="bx bx-sun"></i>
+        </button>
+        <button id="language-toggle" class="toggle">Polski</button>
+      </div>
     </header>
 
-
     <section class="home" id="home">
-        <div class="home-content">
-            <h1 data-translate="home-intro"><span>Tetiana</span></h1>
-                <h3 class="text-animation" data-translate="home-introSubtitle"><span></span></h3>
-            <p data-translate="home-introText"></p>
+      <div class="home-content">
+        <h1 data-translate="home-intro"><span>Tetiana</span></h1>
+        <h3 class="text-animation" data-translate="home-introSubtitle">
+          <span></span>
+        </h3>
+        <p data-translate="home-introText"></p>
 
-            <div class="social-icons">
-                <a href="https://www.instagram.com/przytulnanauka/"><i class='bx bxl-instagram'></i></a>
-                <a href="https://www.linkedin.com/in/tetiana-turlejska-348173172/"><i class='bx bxl-linkedin-square'></i></a>
-                <a href="https://www.tiktok.com/@tetianaturlejska"><i class='bx bxl-tiktok'></i></a>
-                <a href="#"><i class='bx bxl-telegram'></i></a>
-            </div>
-            
-            <div class="btn-group">
-                <a href="#services" class="btn" data-translate="btn-check"></a>
-                <a href="#contact" class="btn" data-translate="btn-call"></a>
-            </div>
+        <div class="social-icons">
+          <a href="https://www.instagram.com/przytulnanauka/"
+            ><i class="bx bxl-instagram"></i
+          ></a>
+          <a href="https://www.linkedin.com/in/tetiana-turlejska-348173172/"
+            ><i class="bx bxl-linkedin-square"></i
+          ></a>
+          <a href="https://www.tiktok.com/@tetianaturlejska"
+            ><i class="bx bxl-tiktok"></i
+          ></a>
+          <a href="#"><i class="bx bxl-telegram"></i></a>
         </div>
-        <div class="home-img">
-            <img id="logo" src="assets\tetiana_avatar.png" alt="Logo">
+
+        <div class="btn-group">
+          <a href="#services" class="btn" data-translate="btn-check"></a>
+          <a href="#contact" class="btn" data-translate="btn-call"></a>
         </div>
+      </div>
+      <div class="home-img">
+        <img id="logo-img" src="assets\tetiana_avatar.png" alt="Logo" />
+      </div>
     </section>
 
     <section class="education" id="education">
-        <h2 class="heading" data-translate="edu-title">Wykształcenie</h2>
+      <h2 class="heading" data-translate="edu-title">Wykształcenie</h2>
 
-        <div class="timeline-items">
-            <div class="timeline-item">
-                <div class="timeline-dot"></div>
-                    <div class="timeline-date">2022</div>
-                    <div class="timeline-content">
-                        <h3 data-translate="edu-timeline-1"></h3>
-                        <p data-translate="edu-p-1">L</p>
-                    </div>
-            </div>
-
-            <div class="timeline-item">
-                <div class="timeline-dot"></div>
-                    <div class="timeline-date">2020</div>
-                    <div class="timeline-content">
-                        <h3 data-translate="edu-timeline-2"></h3>
-                        <p data-translate="edu-p-2"></p>
-                    </div>
-            </div>
-
-            <div class="timeline-item">
-                <div class="timeline-dot"></div>
-                    <div class="timeline-date">2018</div>
-                    <div class="timeline-content">
-                        <h3 data-translate="edu-timeline-3"></h3>
-                        <p data-translate="edu-p-3"></p>
-                    </div>
-            </div>
-
+      <div class="timeline-items">
+        <div class="timeline-item">
+          <div class="timeline-dot"></div>
+          <div class="timeline-date">2022</div>
+          <div class="timeline-content">
+            <h3 data-translate="edu-timeline-1"></h3>
+            <p data-translate="edu-p-1">L</p>
+          </div>
         </div>
+
+        <div class="timeline-item">
+          <div class="timeline-dot"></div>
+          <div class="timeline-date">2020</div>
+          <div class="timeline-content">
+            <h3 data-translate="edu-timeline-2"></h3>
+            <p data-translate="edu-p-2"></p>
+          </div>
+        </div>
+
+        <div class="timeline-item">
+          <div class="timeline-dot"></div>
+          <div class="timeline-date">2018</div>
+          <div class="timeline-content">
+            <h3 data-translate="edu-timeline-3"></h3>
+            <p data-translate="edu-p-3"></p>
+          </div>
+        </div>
+      </div>
     </section>
 
-    <section class="services" id = "services">
-    <h2 class="heading" data-translate="services-title"></h2>
+    <section class="services" id="services">
+      <h2 class="heading" data-translate="services-title"></h2>
 
-    <div class="services-container">
+      <div class="services-container">
         <div class="service-box">
-            <div class="service-info">
-                <h4 data-translate="service-box-title-1"></h4>
-                <p data-translate="service-box-content-1"></p>
-            </div>
+          <div class="service-info">
+            <h4 data-translate="service-box-title-1"></h4>
         </div>
-    
-        <div class="service-box">
-            <div class="service-info">
-                <h4 data-translate="service-box-title-2"></h4>
-                <p data-translate="service-box-content-2"></p>
-            </div>
-        </div>
-    
-        <div class="service-box">
-            <div class="service-info">
-                <h4 data-translate="service-box-title-3"></h4>
-                <p data-translate="service-box-content-3"></p>
-            </div>
+            <p data-translate="service-box-content-1"></p>
         </div>
 
         <div class="service-box">
-            <div class="service-info">
-                <h4 data-translate="service-box-title-4"></h4>
-                <p data-translate="service-box-content-4"></p>
-            </div>
+          <div class="service-info">
+            <h4 data-translate="service-box-title-2"></h4>
+        </div>
+            <p data-translate="service-box-content-2"></p>
         </div>
 
-    </div>
+        <div class="service-box">
+          <div class="service-info"> 
+            <h4 data-translate="service-box-title-3"></h4>
+        </div>
+            <p data-translate="service-box-content-3"></p>
+        </div>
+
+        <div class="service-box">
+          <div class="service-info">
+            <h4 data-translate="service-box-title-4"></h4>
+        </div>
+            <p data-translate="service-box-content-4"></p>
+        </div>
+      </div>
     </section>
 
     <section class="experience" id="experience">
-        <h2 class="heading" data-translate="experience-title"></h2>
-    
-        <div class="experience-container">
-            <div class="experience-card">
-                <div class="card-inner">
-                    <div class="card-front">
-                        <h3 data-translate="exp-card-front-1"></h3>
-                        <p data-translate="exp-card-front-p-1"></p>
-                    </div>
-                    <div class="card-back">
-                        <h3 data-translate="exp-card-back-1"></h3>
-                        <p data-translate="exp-card-back-p-1"></p>
-                    </div>
-                </div>
+      <h2 class="heading" data-translate="experience-title"></h2>
+
+      <div class="experience-container">
+        <div class="experience-card">
+          <div class="card-inner">
+            <div class="card-front">
+              <h3 data-translate="exp-card-front-1"></h3>
+              <p data-translate="exp-card-front-p-1"></p>
             </div>
-    
-            <div class="experience-card">
-                <div class="card-inner">
-                    <div class="card-front">
-                        <h3 data-translate="exp-card-front-2"></h3>
-                        <p data-translate="exp-card-front-p-2"></p>
-                    </div>
-                    <div class="card-back">
-                        <img src="assets/pck.jpg" alt="pck">
-                    </div>
-                </div>
+            <div class="card-back">
+             <img src="assets/tutor.jpg" alt="tutoring">
             </div>
-    
-            <div class="experience-card">
-                <div class="card-inner">
-                    <div class="card-front">
-                        <h3 data-translate="exp-card-front-3"></h3>
-                        <p data-translate="exp-card-front-p-3"></p>
-                    </div>
-                    <div class="card-back">
-                        <h3 data-translate="exp-card-back-3"></h3>
-                        <p data-translate="exp-card-back-3"></p>
-                    </div>
-                </div>
-            </div>
+          </div>
         </div>
+
+        <div class="experience-card">
+          <div class="card-inner">
+            <div class="card-front">
+              <h3 data-translate="exp-card-front-2"></h3>
+              <p data-translate="exp-card-front-p-2"></p>
+            </div>
+            <div class="card-back">
+              <img src="assets/pck.jpg" alt="PCK" />
+            </div>
+          </div>
+        </div>
+
+        <div class="experience-card">
+          <div class="card-inner">
+            <div class="card-front">
+              <h3 data-translate="exp-card-front-3"></h3>
+              <p data-translate="exp-card-front-p-3"></p>
+            </div>
+            <div class="card-back">
+             <img src="assets/online_school.jpg" alt="online school">
+            </div>
+          </div>
+        </div>
+      </div>
     </section>
-    
+
     <section class="contact" id="contact">
-        <h2 class="heading" data-translate="contact-title">Kontakt</h2>
-    
-        <div class="contact-content">
-            <div class="contact-item">
-                <i class='bx bxl-instagram'></i>
-                <h3 data-translate="instagram-btn-title"></h3>
-                <p><a href="https://www.instagram.com/przytulnanauka/" >przytulnanauka</a></p>
-            </div>
-            <div class="contact-item">
-                <i class='bx bxl-linkedin'></i>
-                <h3 data-translate="linkedin-btn-title">Linkeidn</h3>
-                <p><a href="#" target="_blank" data-translate="linkedin-btn-p">Tetiana Turlejska</a></p>
-            </div>
-            <div class="contact-item">
-                <i class='bx bxl-tiktok'></i>
-                <h3 data-translate="tiktok-btn-title">Tiktok</h3>
-                <p><a href="https://www.tiktok.com/@tetianaturlejska" target="_blank">Przytulnanauka</a></p>
-            </div>
-            <div class="contact-item">
-                <i class='bx bxl-telegram'></i>
-                <h3 data-translate="telegram-btn-title">Telegram</h3>
-                <p><a href="#" target="_blank">Przytulnanauka</a></p>
-            </div>
+      <h2 class="heading" data-translate="contact-title">Kontakt</h2>
+
+      <div class="contact-content">
+        <div class="contact-item">
+          <i class="bx bxl-instagram"></i>
+          <h3 data-translate="instagram-btn-title"></h3>
+          <p>
+            <a href="https://www.instagram.com/przytulnanauka/" target="_blank"
+              >przytulnanauka</a
+            >
+          </p>
         </div>
+        <div class="contact-item">
+          <i class="bx bxl-linkedin"></i>
+          <h3 data-translate="linkedin-btn-title">Linkeidn</h3>
+          <p>
+            <a href="https://www.linkedin.com/in/tetiana-turlejska-348173172" target="_blank" data-translate="linkedin-btn-p"
+              >Tetiana Turlejska</a
+            >
+          </p>
+        </div>
+        <div class="contact-item">
+          <i class="bx bxl-tiktok"></i>
+          <h3 data-translate="tiktok-btn-title">Tiktok</h3>
+          <p>
+            <a href="https://www.tiktok.com/@tetianaturlejska" target="_blank"
+              >Przytulnanauka</a
+            >
+          </p>
+        </div>
+        <div class="contact-item">
+          <i class="bx bxl-telegram"></i>
+          <h3 data-translate="telegram-btn-title">Telegram</h3>
+          <p><a href="#" target="_blank">Przytulnanauka</a></p>
+        </div>
+      </div>
     </section>
-    
+
     <footer class="footer">
-        <div class="social">
-            <a href="https://www.instagram.com/przytulnanauka/"><i class='bx bxl-instagram'></i></a>
-            <a href="https://www.linkedin.com/in/tetiana-turlejska-348173172/"><i class='bx bxl-linkedin-square'></i></a>
-            <a href="https://www.tiktok.com/@tetianaturlejska"><i class='bx bxl-tiktok'></i></a>
-            <a href="#"><i class='bx bxl-telegram'></i></a>
-        </div>
+      <div class="social">
+        <a href="https://www.instagram.com/przytulnanauka/"
+          ><i class="bx bxl-instagram"></i
+        ></a>
+        <a href="https://www.linkedin.com/in/tetiana-turlejska-348173172/"
+          ><i class="bx bxl-linkedin-square"></i
+        ></a>
+        <a href="https://www.tiktok.com/@tetianaturlejska"
+          ><i class="bx bxl-tiktok"></i
+        ></a>
+        <a href="#"><i class="bx bxl-telegram"></i></a>
+      </div>
 
-        <ul class="list">
+      <ul class="list">
         <li>
-            <a href="#" data-translate="list-main"></a>
+          <a href="#" data-translate="list-main"></a>
         </li>
 
         <li>
-            <a href="#" data-translate="list-education"></a>
+          <a href="#" data-translate="list-education"></a>
         </li>
 
         <li>
-            <a href="#" data-translate="list-services"></a>
+          <a href="#" data-translate="list-services"></a>
         </li>
 
         <li>
-            <a href="#" data-translate="list-experience"></a>
+          <a href="#" data-translate="list-experience"></a>
         </li>
 
         <li>
-            <a href="#" data-translate="list-contact"></a>
+          <a href="#" data-translate="list-contact"></a>
         </li>
-    </ul>
-    <p class="copyright" data-translate="copyright">
-
-    </p>
+      </ul>
+      <p class="copyright" data-translate="copyright"></p>
     </footer>
 
-    <script src = "scripts/script.js"></script>
-    <script src = "scripts/languages.js"></script>
-</body>
+    <script src="scripts/script.js"></script>
+    <script src="scripts/languages.js"></script>
+  </body>
 </html>

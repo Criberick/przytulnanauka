@@ -45,7 +45,7 @@ toggleButton.addEventListener("click", () => {
 updateButtonIcon();
 
 document.addEventListener("DOMContentLoaded", function () {
-    const logo = document.getElementById("logo");
+    const logo = document.getElementById("logo-img");
     let isOriginal = true;
     const isMobile = ('ontouchstart' in window) || (navigator.maxTouchPoints > 0);
 
@@ -86,8 +86,8 @@ document.addEventListener("DOMContentLoaded", function () {
                 logo.style.opacity = "1";
                 isOriginal = !isOriginal;
             }, 400);
-        }, 5000);
-    }, 5000);
+        }, 4000);
+    }, 4000);
 });
 
 document.addEventListener("DOMContentLoaded", function () {
@@ -114,6 +114,6 @@ document.addEventListener("DOMContentLoaded", function () {
             cards.forEach(card => {
                 card.classList.toggle('is-flipped');
             });
-        }, 5000);
-    }, 5000);
+        }, 4000);
+    }, 4000);
 });

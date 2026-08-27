@@ -178,8 +178,8 @@ document.addEventListener("DOMContentLoaded", () => {
   }
 
 function loadTranslations(lang) {
-    // Ścieżka ../languages/ wychodzi z katalogu scripts do folderu languages
-    fetch(`../languages/${lang}.json`)
+    // Używamy ścieżki względnej do katalogu domowego aplikacji
+    fetch(`./languages/${lang}.json`)
       .then((res) => {
         if (!res.ok) throw new Error("Fetch failed");
         return res.json();
@@ -188,7 +188,6 @@ function loadTranslations(lang) {
         updateDOMTranslations(data);
       })
       .catch(() => {
-        // W razie braku dostępu do plików JSON używamy wbudowanych tłumaczeń
         if (fallbackTranslations[lang]) {
           updateDOMTranslations(fallbackTranslations[lang]);
         }
